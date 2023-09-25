@@ -10,4 +10,3 @@ class RootUserIdentity extends StatelessWidget {
     return const AutoRouter();
   }
 }
-

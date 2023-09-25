@@ -44,8 +44,8 @@ dependencies:
   auto_route: ^7.8.3
 
   # Database
-  sqlite3_flutter_libs: ^0.5.17
-  drift: ^2.11.1
+  floor: ^1.4.2
+  sqflite: ^2.3.0
   path_provider: ^2.0.2
 
   # Image caché
@@ -60,14 +60,17 @@ dependencies:
   # Stream
   stream_transform: ^2.1.0
 
+  # Internet
+  connectivity_plus: ^4.0.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^2.0.0
 
-  # Drift tools
-  drift_dev: ^2.0.0
+  # Floor tools
+  floor_generator: ^1.4.2
 
   # Router tools
   auto_route_generator: ^7.3.1

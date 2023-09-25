@@ -20,11 +20,11 @@ class QuotesState {
   });
 }
 
-class QuotesNotifier extends StateNotifier<QuotesState> {
+class QuotesViewModel extends StateNotifier<QuotesState> {
   final GetQuotesStreamUseCase _getQuotesUseCase;
   StreamSubscription<AsyncOperation<Quotes>>? _quotesSubscription;
 
-  QuotesNotifier(this._getQuotesUseCase)
+  QuotesViewModel(this._getQuotesUseCase)
       : super(QuotesState(status: QuotesStatus.loading)) {
     fetchQuotes();
   }
@@ -56,7 +56,7 @@ class QuotesNotifier extends StateNotifier<QuotesState> {
 }
 
 final quotesNotifierProvider =
-    StateNotifierProvider<QuotesNotifier, QuotesState>((ref) {
+    StateNotifierProvider<QuotesViewModel, QuotesState>((ref) {
   final getQuotesUseCase = ref.watch(getQuotesStreamUseCaseProvider);
-  return QuotesNotifier(getQuotesUseCase);
+  return QuotesViewModel(getQuotesUseCase);
 });

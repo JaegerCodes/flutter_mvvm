@@ -5,8 +5,7 @@ import 'package:partners/core/routing/routes.gr.dart';
 import 'package:partners/core/shared/failure.dart';
 import 'package:partners/core/ui/extension/feedback_handler_navigation_extension.dart';
 import 'package:partners/feature/search_partner_feature/partners_list/domain/model/quote.dart';
-import 'package:partners/feature/search_partner_feature/partners_list/presentation/notifier/quotes_notifier.dart';
-
+import 'package:partners/feature/search_partner_feature/partners_list/presentation/viewmodel/quotes_viewmodel.dart';
 @RoutePage()
 class PartnersListPage extends ConsumerWidget {
   const PartnersListPage({super.key});

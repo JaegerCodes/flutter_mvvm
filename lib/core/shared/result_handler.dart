@@ -68,5 +68,9 @@ extension ResultExtensions<T, E> on Result<T, E> {
   R fold<R>(R Function(T) onSuccess, R Function(E) onFailure) {
     return isSuccess ? onSuccess(getOrNull()!) : onFailure(errorOrNull()!);
   }
+
+  Future<R> futureFold<R>(R Function(T) onSuccess, Future<R> Function(E) onFailure) async {
+    return isSuccess ? onSuccess(getOrNull()!) : await onFailure(errorOrNull()!);
+  }
 }
 

@@ -2,7 +2,7 @@ import 'package:chopper/chopper.dart';
 import 'package:partners/core/shared/failure.dart';
 import 'package:partners/core/shared/result_handler.dart';
 import 'package:partners/feature/search_partner_feature/partners_list/data/error/quotes_failure.dart';
-import 'package:partners/feature/search_partner_feature/partners_list/data/model/quote.dart';
+import 'package:partners/feature/search_partner_feature/partners_list/data/model/dto/quote_dto.dart';
 import 'package:partners/feature/search_partner_feature/partners_list/domain/model/quote.dart';
 
 extension ResponseParsing on Response {

@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
-part 'quote.g.dart';
+part 'quote_dto.g.dart';
 
 @JsonSerializable()
 class QuotesResponse {
@@ -22,4 +22,3 @@ class QuoteResponse {
   factory QuoteResponse.fromJson(Map<String, dynamic> json) => _$QuoteResponseFromJson(json);
   Map<String, dynamic> toJson() => _$QuoteResponseToJson(this);
 }
-

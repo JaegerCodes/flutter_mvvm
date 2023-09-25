@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'quote.dart';
+part of 'quote_dto.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator

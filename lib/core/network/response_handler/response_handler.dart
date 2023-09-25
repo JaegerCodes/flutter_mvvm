@@ -9,14 +9,13 @@ import 'package:partners/core/shared/result_handler.dart';
 
 /// [apiCall] is used to make a safe API call. It avoids boilerplate and if an exception happens, it
 /// is encapsulated here.
-Future<Result<Out, FailureResponse>> apiCall<In, Out>(
-    Future<Response> Function() api,
-    Result<Out, FailureResponse> Function(Response) onSuccess,
-    FailureResponse Function(Response) onFailure,
-) async {
+Future<Result<Out, FailureResponse>> apiCall<In, Out>({
+    required Future<Response> Function() api,
+    required Result<Out, FailureResponse> Function(Response) onSuccess,
+    required FailureResponse Function(Response) onFailure,
+}) async {
   try {
-    final response = await api()
-        .timeout(timeoutDuration);
+    final response = await api().timeout(timeoutDuration);
 
     if (response.statusCode >= 200 && response.statusCode < 300) {
       return onSuccess(response);

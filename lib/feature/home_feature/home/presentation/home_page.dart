@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:partners/core/routing/routes.gr.dart';
-import 'package:partners/feature/search_partner_feature/partners_list/presentation/notifier/quotes_notifier.dart';
+import 'package:partners/feature/search_partner_feature/partners_list/presentation/viewmodel/quotes_viewmodel.dart';
 
 @RoutePage()
 class HomePage extends ConsumerStatefulWidget {

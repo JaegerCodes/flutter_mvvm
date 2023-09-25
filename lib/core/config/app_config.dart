@@ -20,7 +20,7 @@ class EnvironmentConfig {
   static String _getBaseUrl(AppEnvironment environment) {
     switch (environment) {
       case AppEnvironment.DEV:
-        return 'http://0.0.0.0:8080';
+        return 'http://192.168.1.47:8080';
       case AppEnvironment.STAGE:
         return 'http://stage.example.com';
       case AppEnvironment.PROD:
